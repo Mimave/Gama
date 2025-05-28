@@ -12,10 +12,10 @@
       margin: 0;
       padding: 0;
       text-align: center;
-    }
-
-    header {
-      padding: 2rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
     }
 
     h1 {
@@ -27,37 +27,36 @@
       font-style: italic;
       font-size: 1.1rem;
       color: #666;
-      margin: 0 1rem 2rem;
+      margin-bottom: 2rem;
     }
 
-    iframe {
+    .button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      background-color: #4f7942;
+      color: #fff;
       border: none;
-      width: 95%;
-      height: 85vh;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #3b5c33;
     }
 
     footer {
       font-size: 0.9rem;
       color: #aaa;
-      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenid@ al Jardín Vivo</h1>
-    <div class="intro">
-      “Esta hoja florece solo si la miras con tiempo. No se entra corriendo a un templo.”
-    </div>
-  </header>
+  <h1>Bienvenid@ al Jardín Vivo</h1>
+  <div class="intro">
+    “Esta hoja florece solo si la miras con tiempo. No se entra corriendo a un templo.”
+  </div>
 
-  <iframe src="https://gamma.app/docs/PROTOCOLO-SIMBOLICO-DE-RELACION-CON-EL-JARDIN-VIVO-xx6j29oee308vsd" allowfullscreen></iframe>
-
-  <footer>
-    © 2025 El Jardín Vivo · thechousystem.org
-  </footer>
-</body>
-</html>
+  <a href="https://gamma.app/docs/PROTOCOLO-SIMBOLICO-DE-RELACION-CON-EL-JARDIN-VIVO-xx6j29oee308vsd" target="_b_
