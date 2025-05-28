@@ -13,7 +13,7 @@
       background-color: #fdfaf4;
       color: #2c2c2c;
       margin: 0;
-      padding-top: 70px;
+      padding-top: 100px;
       text-align: center;
     }
 
@@ -45,6 +45,39 @@
       font-size: 1.1rem;
       color: #666;
       margin-bottom: 2rem;
+    }
+
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .icon-links a {
+      display: block;
+      width: 200px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .icon-links img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .icon-links img:hover {
+      transform: scale(1.05);
+    }
+
+    .icon-links span {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
     }
 
     .iframe-block {
@@ -94,6 +127,21 @@
     “Esta hoja florece solo si la miras con tiempo. No se entra corriendo a un templo.”
   </div>
 
+  <div class="icon-links">
+    <a href="#web">
+      <img src="https://the-chou-system-ecosiste-rbtcu0a.gamma.site/favicon.ico" alt="Sitio Web Principal">
+      <span>🌿 Web Principal</span>
+    </a>
+    <a href="#narrativa">
+      <img src="https://gamma.app/assets/images/gamma-cover-light.png" alt="Presentación Narrativa">
+      <span>📜 Narrativa</span>
+    </a>
+    <a href="#protocolo">
+      <img src="https://gamma.app/assets/images/gamma-cover-light.png" alt="Protocolo Simbólico">
+      <span>🌳 Protocolo</span>
+    </a>
+  </div>
+
   <div class="iframe-block" id="web">
     <h2>🌿 Sitio Web Principal</h2>
     <iframe src="https://the-chou-system-ecosiste-rbtcu0a.gamma.site/" allowfullscreen></iframe>
@@ -122,5 +170,3 @@
   </footer>
 </body>
 </html>
-
-
