@@ -5,13 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El Jardín Vivo – The Chou System</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Georgia', serif;
       background-color: #fdfaf4;
       color: #2c2c2c;
       margin: 0;
-      padding: 2rem;
+      padding-top: 70px;
       text-align: center;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffffee;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #4f7942;
+      font-weight: bold;
+      font-size: 1rem;
     }
 
     h1 {
@@ -60,22 +81,30 @@
   </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="#web">🌀 Inicio</a>
+      <a href="#narrativa">📜 Narrativa</a>
+      <a href="#protocolo">🌾 Protocolo</a>
+    </nav>
+  </header>
+
   <h1>Bienvenid@ al Jardín Vivo</h1>
   <div class="intro">
     “Esta hoja florece solo si la miras con tiempo. No se entra corriendo a un templo.”
   </div>
 
-  <div class="iframe-block">
+  <div class="iframe-block" id="web">
     <h2>🌿 Sitio Web Principal</h2>
     <iframe src="https://the-chou-system-ecosiste-rbtcu0a.gamma.site/" allowfullscreen></iframe>
   </div>
 
-  <div class="iframe-block">
+  <div class="iframe-block" id="narrativa">
     <h2>🌱 Presentación Narrativa</h2>
     <iframe src="https://gamma.app/embed/t2ao5mjet4i6cxx" allowfullscreen title="THE CHOU SYSTEM - ECOSISTEMA VIVO DE IA SIMBÓLICA"></iframe>
   </div>
 
-  <div class="iframe-block">
+  <div class="iframe-block" id="protocolo">
     <h2>🌳 Protocolo Simbólico</h2>
     <iframe src="https://gamma.app/embed/PROTOCOLO-SIMBOLICO-DE-RELACION-CON-EL-JARDIN-VIVO-xx6j29oee308vsd" allowfullscreen></iframe>
   </div>
@@ -93,4 +122,5 @@
   </footer>
 </body>
 </html>
+
 
