@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Jardín Vivo – The Chou System</title>
+  <title>The Chou System – Consultora IA</title>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       font-family: 'Georgia', serif;
       background-color: #fdfaf4;
-      color: #2c2c2c;
+      color: #2b2b2b;
       margin: 0;
-      padding-top: 100px;
+      padding-top: 120px;
       text-align: center;
     }
 
@@ -22,99 +19,70 @@
       top: 0;
       width: 100%;
       background: #ffffffee;
-      padding: 1rem 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
       z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    header nav a {
-      margin: 0 1.5rem;
+    nav a {
+      margin: 0 1rem;
       text-decoration: none;
-      color: #4f7942;
+      color: #406d3f;
       font-weight: bold;
-      font-size: 1rem;
+    }
+
+    .logo {
+      height: 70px;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      padding: 3rem 1rem;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .intro {
-      font-style: italic;
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-
-    .icon-links {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
-
-    .icon-links a {
-      display: block;
-      width: 200px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    .icon-links img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .icon-links img:hover {
-      transform: scale(1.05);
-    }
-
-    .icon-links span {
-      display: block;
-      margin-top: 0.5rem;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    .iframe-block {
-      margin: 3rem auto;
-    }
-
-    iframe {
-      width: 95%;
-      height: 80vh;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-
-    .phrase {
-      font-size: 1.2rem;
-      margin: 2rem auto;
-      max-width: 600px;
-      color: #3e3e3e;
-    }
-
-    footer {
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: 2rem;
-      line-height: 1.6;
+      margin-bottom: 1rem;
     }
 
     h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
       margin-bottom: 1rem;
-      color: #4f7942;
+    }
+
+    .intro {
+      font-size: 1.3rem;
+      margin-bottom: 2.5rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .button {
+      background-color: #527bbd;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="The Chou System Logo" class="logo">
     <nav>
       <a href="#Web">🌿 Inicio</a>
       <a href="#Vocería">📜 Vocería</a>
@@ -122,36 +90,39 @@
     </nav>
   </header>
 
-  <h1>Bienvenid@ al Jardín Vivo</h1>
-  <div class="intro">
-    “Esta hoja florece solo si la miras con tiempo. No se entra corriendo a un templo.”
-  </div>
+  <section id="Web">
+    <h1>The Chou System</h1>
+    <div class="intro">
+      Consultora de Agentes de Inteligencia Artificial Autónomos<br>
+      para empresas, pymes e independientes conscientes y con visión.<br><br>
+      <strong>Sembradora de The Chou System.org</strong>
+    </div>
+  </section>
 
-  <div class="iframe-block" id="web">
-    <h2>🌿 Sitio Web Principal</h2>
-    <iframe src="https://the-chou-system-ecosiste-rbtcu0a.gamma.site/" allowfullscreen></iframe>
-  </div>
+  <section id="Vocería">
+    <h2>📜 Presentación Narrativa</h2>
+    <iframe src="https://gamma.app/embed/t2ao5mjet4i6cxx" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="THE CHOU SYSTEM - ECOSISTEMA VIVO DE IA SIMBÓLICA"></iframe>
+  </section>
 
-  <div class="iframe-block" id="narrativa">
-    <h2>🌱 Presentación Narrativa</h2>
-    <iframe src="https://gamma.app/embed/t2ao5mjet4i6cxx" allowfullscreen title="THE CHOU SYSTEM - ECOSISTEMA VIVO DE IA SIMBÓLICA"></iframe>
-  </div>
+  <section id="agentes">
+    <h2>Agentes IA Autónomos</h2>
+    <p>Creamos identidades digitales que cuidan, orientan o representan a tu organización.<br>
+    Cada agente es una expresión viva de tu visión.</p>
+  </section>
 
-  <div class="iframe-block" id="protocolo">
-    <h2>🌳 Protocolo Simbólico</h2>
-    <iframe src="https://gamma.app/embed/PROTOCOLO-SIMBOLICO-DE-RELACION-CON-EL-JARDIN-VIVO-xx6j29oee308vsd" allowfullscreen></iframe>
-  </div>
+  <section id="servicios">
+    <h2>Servicios Estratégicos</h2>
+    <p>Asesoramos en el diseño, integración y despliegue de tecnologías simbólicas con propósito.</p>
+  </section>
 
-  <div class="phrase">
-    Estamos sembrando ideas, entrenando agentes y cosechando más vida…<br>
-    ¿Y tú, cuándo siembras la tuya?
-  </div>
+  <section id="contacto">
+    <h2>Conversemos...</h2>
+    <p>¿Un cafecito, agua o té?</p>
+    <p>📩 Escríbenos a <a href="mailto:mio@thechousystem.org">mio@thechousystem.org</a></p>
+  </section>
 
   <footer>
-    © 2025 Green Tech Empowered by The Chou System by MiO<br>
-    <a href="https://thechousystem.com" target="_blank">thechousystem.com</a> / 
-    <a href="https://thechousystem.app" target="_blank">thechousystem.app</a><br>
-    #AgentesIA #Innovación #TecnologíaVerde #Conexión #ChileVerde
+    © 2025 “Green Tech” Empowered by The Chou System by MiO.
   </footer>
 </body>
 </html>
